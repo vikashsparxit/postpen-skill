@@ -4,9 +4,10 @@ Status: **nothing has been submitted.** This repo has no remote. Every step mark
 
 ## 0. Prerequisites (all destinations)
 
-- [ ] **[Vikash]** Create the GitLab project under the `devsparxit` group, e.g. `devsparxit/postpen-skill`, visibility **Public**, MIT licence. Then `git remote add origin …` and push `main`. (Manifests already assume `https://gitlab.com/devsparxit/postpen-skill`; fix them if the path differs.)
+- [ ] **[Vikash]** Create the project on the self-hosted GitLab (`https://gitlab.devsparxit.com`), visibility **Public**, MIT licence. Then `git remote add origin …` and push `main`. Manifests use the placeholder `https://gitlab.devsparxit.com/POSTPEN/postpen-skill`; the group/path is **to be confirmed** when the project is created, so fix every occurrence if it differs.
+- [ ] **[Vikash]** Confirm the instance allows **public visibility with anonymous read** (no sign-in, no VPN/IP allowlist). Marketplaces and `/plugin marketplace add` fetch the repo anonymously and fail otherwise.
 - [ ] **GitHub mirror?** Cursor Marketplace, Glama, and several skill/plugin directories pull from or prefer GitHub. Decide whether to set up a GitLab → GitHub push mirror (e.g. `github.com/postpen-ai/postpen-skill`) **[Vikash]**.
-- [ ] Add `.mcp.json` at the repo root (blocked by a permission prompt during the build; contents below), or keep the inline `mcpServers` in `.claude-plugin/plugin.json`.
+- [ ] **[Vikash]** Add `.mcp.json` at the repo root (contents below; the agent's write was blocked by the sensitive-file permission check). In the same commit set `"mcpServers": "./.mcp.json"` in `.claude-plugin/plugin.json` and delete its inline `postpen` server, so the server is defined once. Until then the inline definition is the only one.
 - [ ] **[Vikash]** Official logo file in `assets/` if a directory needs a committed image (see `assets/README.md`). Hosted: https://app.postpen.ai/icons/App-Icon.png (600×600).
 - [ ] Public URLs return 200: https://postpen.ai/privacy-policy, https://postpen.ai/terms-of-service, https://postpen.ai/support, https://postpen.ai/agents (new page, copy in `postpen-agents-page.md`).
 - [ ] **[Vikash]** Reviewer account (see POSTPEN `docs/mcp-marketplace-submission-plan.md` §3): Organization plan, test LinkedIn profile + test company page, and ideally test X/Facebook/Instagram/Threads/YouTube accounts. Credentials go only into private reviewer fields.
@@ -70,11 +71,10 @@ File: `packaging/postpen-agents-page.md`.
 
 ## Open questions for Vikash
 
-1. Exact GitLab path and whether a GitHub mirror is acceptable (and under which org).
+1. Exact GitLab group/path on gitlab.devsparxit.com and whether a GitHub mirror is acceptable (and under which org).
 2. Should the skill version track the server (`1.3.0`) or stay independent (`0.1.0`)?
 3. Claude plugin directory: submit the plugin from this repo, or only the connector?
 4. Legal company name and review contact for directory forms.
 5. Is a committed logo file OK to add to a public MIT repo (trademark notice in README?).
-6. Inspiration attribution: tool descriptions say "Name the author when you draw on a post", while the owner decision is "no credit needed because nothing is copied". The skill names the author **in chat** only. Confirm that.
-7. Facebook Reels: the branch refuses `facebook.format: "reel"`. Is Reels publishing planned? Page copy currently says "not yet".
-8. `blocked` / `restricted` network_status are reserved. When detected, update `networks.md`, `troubleshooting.md` and the evals.
+6. Facebook Reels: the branch refuses `facebook.format: "reel"`. Is Reels publishing planned? Page copy currently says "not yet".
+7. `blocked` / `restricted` network_status are reserved. When detected, update `networks.md`, `troubleshooting.md` and the evals.
