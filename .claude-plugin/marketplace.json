@@ -1,0 +1,24 @@
+{
+  "name": "postpen",
+  "owner": {
+    "name": "PostPen",
+    "email": "hello@postpen.ai"
+  },
+  "metadata": {
+    "description": "PostPen's official Claude Code marketplace: the postpen skill plus the PostPen MCP server.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "postpen",
+      "source": "./",
+      "description": "Draft, schedule and check posts on LinkedIn, X, Facebook, Instagram, Threads and YouTube with PostPen. Always previews first and never posts without your OK.",
+      "version": "0.1.0",
+      "author": { "name": "PostPen", "email": "hello@postpen.ai" },
+      "homepage": "https://postpen.ai/agents?utm_source=claude&utm_medium=plugin&utm_campaign=postpen_skill",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["social media", "scheduling", "linkedin", "instagram", "youtube"]
+    }
+  ]
+}

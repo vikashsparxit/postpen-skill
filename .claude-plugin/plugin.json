@@ -1,0 +1,21 @@
+{
+  "name": "postpen",
+  "version": "0.1.0",
+  "description": "Draft, schedule and check posts on LinkedIn, X, Facebook, Instagram, Threads and YouTube with PostPen. Always previews first and never posts without your OK.",
+  "author": {
+    "name": "PostPen",
+    "email": "hello@postpen.ai",
+    "url": "https://postpen.ai"
+  },
+  "homepage": "https://postpen.ai/agents?utm_source=claude&utm_medium=plugin&utm_campaign=postpen_skill",
+  "repository": "https://gitlab.com/devsparxit/postpen-skill",
+  "license": "MIT",
+  "keywords": ["social media", "linkedin", "x", "twitter", "facebook", "instagram", "threads", "youtube", "scheduling", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": {
+    "postpen": {
+      "type": "http",
+      "url": "https://mcp.postpen.ai"
+    }
+  }
+}
