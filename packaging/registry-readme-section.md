@@ -9,8 +9,8 @@
 
 The public `postpen` agent skill teaches agents the safe way to use this server: discover destinations, write a version per network, save a draft, show the preview link, and schedule or publish only after the user's explicit OK on the exact text, accounts, media, format and time. It also covers Instagram Story/Reel/trial Reel, YouTube Shorts and privacy, rights reminders for music, and post-publish checks.
 
-- Repo: https://gitlab.devsparxit.com/POSTPEN/postpen-skill (skill at `skills/postpen/SKILL.md`)
-- Claude Code: `/plugin marketplace add <repo URL>` then `/plugin install postpen@postpen` (installs the skill and this MCP server)
+- Repo: https://github.com/vikashsparxit/postpen-skill (skill at `skills/postpen/SKILL.md`)
+- Claude Code: `/plugin marketplace add vikashsparxit/postpen-skill` then `/plugin install postpen@postpen` (installs the skill and this MCP server)
 - Cursor: install the PostPen plugin (bundles the skill, a rule, and this server)
 - Other agents: copy `skills/postpen/` into the agent's skills folder and add `https://mcp.postpen.ai` as a remote MCP server
 

@@ -3,6 +3,7 @@
 An [Agent Skill](skills/postpen/SKILL.md) that teaches AI agents to draft, schedule, publish and check social posts on **LinkedIn, X, Facebook, Instagram, Threads and YouTube** through the [PostPen](https://postpen.ai) MCP server, and to **never post without the user's explicit OK**.
 
 - MCP server: `https://mcp.postpen.ai` (streamable HTTP, OAuth sign-in)
+- Repo: https://github.com/vikashsparxit/postpen-skill
 - App: https://app.postpen.ai · Setup for agents: https://postpen.ai/agents
 
 ## What the skill does
@@ -19,7 +20,7 @@ An [Agent Skill](skills/postpen/SKILL.md) that teaches AI agents to draft, sched
 **Claude Code** (skill + MCP server):
 
 ```
-/plugin marketplace add <REPO_URL>
+/plugin marketplace add vikashsparxit/postpen-skill
 /plugin install postpen@postpen
 ```
 

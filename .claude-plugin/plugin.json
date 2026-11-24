@@ -8,7 +8,7 @@
     "url": "https://postpen.ai"
   },
   "homepage": "https://postpen.ai/agents?utm_source=claude&utm_medium=plugin&utm_campaign=postpen_skill",
-  "repository": "https://gitlab.devsparxit.com/POSTPEN/postpen-skill",
+  "repository": "https://github.com/vikashsparxit/postpen-skill",
   "license": "MIT",
   "keywords": ["social media", "linkedin", "x", "twitter", "facebook", "instagram", "threads", "youtube", "scheduling", "mcp"],
   "skills": "./skills/",

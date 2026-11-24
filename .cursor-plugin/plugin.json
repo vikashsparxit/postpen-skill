@@ -9,7 +9,7 @@
     "url": "https://postpen.ai"
   },
   "homepage": "https://postpen.ai/agents?utm_source=cursor&utm_medium=plugin&utm_campaign=postpen_skill",
-  "repository": "https://gitlab.devsparxit.com/POSTPEN/postpen-skill",
+  "repository": "https://github.com/vikashsparxit/postpen-skill",
   "license": "MIT",
   "keywords": ["social media", "linkedin", "x", "facebook", "instagram", "threads", "youtube", "scheduling", "publishing", "mcp"],
   "logo": "https://app.postpen.ai/icons/App-Icon.png",
