@@ -26,7 +26,9 @@ Setup help for every client: https://app.postpen.ai/agents
 
 Never ask the user for a password, API key or token in chat.
 
-## Tools missing or fields rejected (stale schema) {#older-server}
+## Older server or stale tool list
+
+Tools missing or fields rejected.
 
 PostPen's server advertises `tools.listChanged: false`, so clients cache the tool list from when they connected and won't see new tools or fields until they reconnect.
 

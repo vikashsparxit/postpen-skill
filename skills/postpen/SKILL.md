@@ -57,7 +57,7 @@ Helpers:
 - **YouTube**: Short (`youtube_format: "short"`: vertical/square, ≤3 min) or regular video (`"video"`); `youtube.privacy` `public` / `unlisted` / `private` (default public, so confirm it); `youtube.title`; description = the YouTube text; optional `tags`, `category`, `made_for_kids`, `playlist_id`, `thumbnail_url` (regular videos on verified channels only).
 - **Instagram**: `instagram.format` `"feed"` (images/carousel), `"story"` (1 image or 3–60 s video, Instagram-only post, no caption/first comment, gone after 24 h) or `"reel"` (1 video ≤15 min). Reels can be trial Reels: `instagram.trial_reel: { "graduation": "manual" | "auto" }` (shown to non-followers first; manual = user shares to followers in the app, auto = Instagram decides).
 - **Facebook**: only `facebook: { "format": "feed" }`. **PostPen cannot post Facebook Reels**; a video goes out as a regular Page video. Say so if the user asks for a Reel.
-- If the server rejects `instagram`, `facebook` or `youtube_format` as unknown parameters, it's an older PostPen server. Save the draft without them and tell the user to pick the format in app.postpen.ai before it goes out (see troubleshooting).
+- If the server rejects `instagram`, `facebook` or `youtube_format` as unknown parameters, it's an older PostPen server. Save the draft without them and tell the user to pick the format in app.postpen.ai before it goes out (see [troubleshooting](references/troubleshooting.md#older-server-or-stale-tool-list)).
 
 ## 3. Media
 

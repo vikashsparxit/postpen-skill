@@ -66,7 +66,7 @@ Gotchas:
 - Links in captions aren't clickable; put "link in bio" or use the first comment.
 - After 24 h a Story's `network_status` becomes `expired`. That's normal.
 - Instagram mutes or blocks Reels with unlicensed music. Use Instagram's own licensed audio in the app, or tracks the user owns.
-- Older PostPen servers don't take `instagram`; see [troubleshooting.md](troubleshooting.md#older-server).
+- Older PostPen servers don't take `instagram`; see [troubleshooting.md](troubleshooting.md#older-server-or-stale-tool-list).
 
 ## Threads
 
