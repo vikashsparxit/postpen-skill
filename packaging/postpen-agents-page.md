@@ -46,7 +46,7 @@ Everything also appears on your calendar at [app.postpen.ai](https://app.postpen
 **Claude Code (plugin, includes the skill):**
 
 ```
-/plugin marketplace add <REPO_URL>
+/plugin marketplace add vikashsparxit/postpen-skill
 /plugin install postpen@postpen
 ```
 
